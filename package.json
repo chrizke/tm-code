@@ -3,7 +3,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrizke/tm-tools.git"
+    "url": "https://github.com/chrizke/tm-code.git"
   },
   "scripts": {
     "compile:all": "lerna run compile",
