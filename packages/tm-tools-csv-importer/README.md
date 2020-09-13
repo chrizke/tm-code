@@ -2,7 +2,11 @@
 Importer Library for typical Toastmasters roster files. It comes with defined model types for all three district roster files.
 
 ## Usage
-> npm install @tm-tools/csv-importer
+Install it as usual as an npm package
+
+```shell
+npm install @tm-tools/csv-importer
+```
 
 Use one of the following async methods to import csv files:
 
