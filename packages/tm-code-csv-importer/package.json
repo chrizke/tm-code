@@ -1,8 +1,12 @@
 {
-  "name": "@tm-tools/csv-importer",
-  "version": "0.0.0",
+  "name": "@tm-code/csv-importer",
+  "version": "0.0.2",
   "description": "Parser library for unserializing typical TM roster files for districts",
   "author": "Christoph Wanzke",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrizke/tm-tools.git"
+  },
   "homepage": "",
   "license": "MIT",
   "main": "dist/index.js",
@@ -13,7 +17,8 @@
     "dist"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist"
   },
   "scripts": {
     "compile": "tsc -b tsconfig.json",

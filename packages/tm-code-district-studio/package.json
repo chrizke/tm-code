@@ -1,5 +1,5 @@
 {
-  "name": "@tm-tools/district-studio",
+  "name": "@tm-code/district-studio",
   "version": "0.0.0",
   "description": "Application to make the live of district officers easier",
   "author": "Christoph Wanzke",
@@ -22,6 +22,6 @@
     "electron": "^9.1.1"
   },
   "dependencies": {
-    "@tm-tools/district-studio-app": "^0.0.0"
+    "@tm-code/district-studio-app": "^0.0.0"
   }
 }

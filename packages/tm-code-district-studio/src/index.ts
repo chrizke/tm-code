@@ -10,7 +10,7 @@ function createWindow() {
   })
 
   // Load a dummy index.html. Will become app starting page in the future.
-  win.loadFile('../node_modules/@tm-tools/district-studio-app/dist/district-studio-app/index.html');
+  win.loadFile('../node_modules/@tm-code/district-studio-app/dist/district-studio-app/index.html');
 }
 
 if (app) {
