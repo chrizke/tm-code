@@ -1,0 +1,27 @@
+{
+  "name": "@tm-tools/district-studio",
+  "version": "0.0.0",
+  "description": "Application to make the live of district officers easier",
+  "author": "Christoph Wanzke",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "electron dist/index.js",
+    "build": "tsc -b tsconfig.json",
+    "test": "mocha --config .mocharc.json"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "electron": "^9.1.1"
+  },
+  "dependencies": {
+    "@tm-tools/district-studio-app": "^0.0.0"
+  }
+}

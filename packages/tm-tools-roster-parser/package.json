@@ -1,0 +1,26 @@
+{
+  "name": "@tm-tools/roster-parser",
+  "version": "0.0.0",
+  "description": "Parser library for unserializing typical TM roster files for districts",
+  "author": "Christoph Wanzke",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "compile": "tsc -b tsconfig.json",
+    "test": "mocha --config .mocharc.json"
+  },
+  "dependencies": {
+    "csv-parse": "^4.8.8",
+    "reflect-metadata": "^0.1.13"
+  }
+}

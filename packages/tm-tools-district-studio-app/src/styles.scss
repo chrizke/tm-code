@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+// Colors
+$blue: #004165;
+$burgundy: #772432;
+$gray: #A9B2B1;
+$yellow: #F2DF74;
+
+$primary: $blue;
+$background: #F7FCFF;
+
+$fontcolor: #707070;
+$fontsize: 18pt;
+$fontfamily: Segoe UI, Arial, sans-serif;
+
+body {
+  background-color: $background;
+  color: $fontcolor;
+
+  font-size: 18pt;
+  font-family: $fontfamily;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+.app {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 67px auto;
+}
+
+.navbar {
+  height: 100%;
+  background-color: $primary;
+  padding-top: 0px;
+}
+
+.navbar-item {
+  color: white;
+  font-size: 9pt;
+
+  width: 100%;
+  height: 56px;
+
+
+  &:hover {
+    background-color: scale-color($color: $primary, $lightness: 10%);
+    cursor:pointer;
+  }
+
+  & .navbar-item-text {
+    text-align: center;
+  }
+
+  $lighterblue: scale-color($color: $blue, $alpha: 90%, $lightness: 7%);
+
+  &.selected {
+    $haloblue: scale-color($color: $blue, $lightness: 21%);
+    $transparentblue: change-color($color: $blue, $alpha: 0);
+    background-image:
+      linear-gradient(180deg,$lighterblue,$transparentblue 33%),
+      linear-gradient(225deg,$lighterblue 33%, $transparentblue 70%),
+      linear-gradient(270deg,$lighterblue 70%,$transparentblue 94%),
+      linear-gradient(315deg,$lighterblue 33%,$transparentblue 70%),
+      linear-gradient(360deg,$lighterblue,$transparentblue 33%),
+      linear-gradient(90deg,$haloblue 6%,$transparentblue 70%);
+  }
+
+  &.selected:hover {
+    background-image: none;
+    background-color: scale-color($color: $lighterblue, $lightness: 7.6%);
+  }
+
+  &.selected::before {
+      content: '';
+      width: 4px;
+      height: 56px;
+      position: absolute;
+
+      background-color: $gray;
+  }
+}
+
+
+
+.main {
+  overflow-y: scroll;
+}

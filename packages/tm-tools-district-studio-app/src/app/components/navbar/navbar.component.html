@@ -1,0 +1,5 @@
+<div class="navbar">
+  <div class="navbar-item" [class.selected]="selectedItem === 'members'" (click)="itemClicked('members')"><div class="navbar-item-text">Members</div></div>
+  <div class="navbar-item" [class.selected]="selectedItem === 'clubs'" (click)="itemClicked('clubs')"><div class="navbar-item-text">Clubs</div></div>
+  <div class="navbar-item" [class.selected]="selectedItem === 'settings'" (click)="itemClicked('settings')"><div class="navbar-item-text">Settings</div></div>
+</div>
