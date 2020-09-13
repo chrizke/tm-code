@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { LineProcessor } from '../../src/parser/lineprocessor';
+import { LineProcessor } from '../../src/importer/lineprocessor';
 import { CsvKey } from '../../src/decorators/csvkey';
 
 // class Model {

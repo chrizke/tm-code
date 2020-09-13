@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { ModelFactory } from '../../src/parser/modelfactory';
+import { ModelFactory } from '../../src/importer/modelfactory';
 import { MetadataStore } from '../../src/metadata/metadatastore';
 import { CsvKey, CsvKeyOptions, ImportFormatterOptions, ImportFormatter } from '../../src/decorators';
 
