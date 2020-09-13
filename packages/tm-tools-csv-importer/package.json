@@ -1,5 +1,5 @@
 {
-  "name": "@tm-tools/roster-parser",
+  "name": "@tm-tools/csv-importer",
   "version": "0.0.0",
   "description": "Parser library for unserializing typical TM roster files for districts",
   "author": "Christoph Wanzke",

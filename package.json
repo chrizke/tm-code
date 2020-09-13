@@ -4,8 +4,8 @@
   "scripts": {
     "compile:all": "lerna run compile",
     "start:studio": "lerna run start --scope @tm-tools/district-studio",
-    "start:roster": "lerna exec --scope @tm-tools/roster-parser -- ts-node src/index.ts",
-    "test": "lerna exec --scope @tm-tools/roster-parser -- npm run test",
+    "start:importer": "lerna exec --scope @tm-tools/csv-importer -- ts-node src/index.ts",
+    "test": "lerna exec --scope @tm-tools/csv-importer -- npm run test",
     "test:all": "mocha"
   },
   "devDependencies": {
